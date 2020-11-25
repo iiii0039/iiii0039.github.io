@@ -7,14 +7,18 @@
  
  <body style='margin:0px; overflow:hidden;'>
  <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+  
  	<a-assets>
  		<a-asset-item id="table-obj" src="tablemodel/table.obj"></a-asset-item>
  		<a-asset-item id="table-mtl" src="tablemodel/table.mtl"></a-asset-item>
  	</a-assets>
+  
   <a-marker preset="custom" type="pattern" url="marker_list/green.patt">
    <a-obj-model id="table" src="#table-obj" mtl="#table-mtl" position="0 0 0"></a-obj-model>
  	</a-marker>
+  
  	<a-entity camera></a-entity>
+  
   </a-scene>
  </body>
  </html>
